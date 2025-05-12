@@ -1,10 +1,8 @@
 import json
 import statistics
 
-# Lista onde os alunos serão armazenados
 alunos = []
 
-# Carrega os dados do arquivo JSON
 def carregar_dados():
     global alunos
     try:
@@ -13,12 +11,10 @@ def carregar_dados():
     except FileNotFoundError:
         alunos = []
 
-# Salva os dados no arquivo JSON
 def salvar_dados():
     with open("alunos.json", "w") as arquivo:
         json.dump(alunos, arquivo, indent=4)
 
-# Cadastra um novo aluno
 def cadastrar_aluno():
     nome = input("Nome do aluno: ")
     idade = input("Idade: ")
@@ -29,7 +25,6 @@ def cadastrar_aluno():
     salvar_dados()
     print("Aluno cadastrado com sucesso!")
 
-# Lista todos os alunos cadastrados
 def listar_alunos():
     if not alunos:
         print("Nenhum aluno cadastrado.")
@@ -37,7 +32,6 @@ def listar_alunos():
     for aluno in alunos:
         print(f"Nome: {aluno['nome']} | Idade: {aluno['idade']} | Nota: {aluno['nota']}")
 
-# Exibe estatísticas das notas
 def estatisticas():
     if not alunos:
         print("Nenhum dado disponível.")
@@ -47,14 +41,12 @@ def estatisticas():
     print(f"Moda das notas: {statistics.mode(notas)}")
     print(f"Mediana das notas: {statistics.median(notas)}")
 
-# Limpa todos os dados
 def limpar_dados():
     global alunos
     alunos = []
     salvar_dados()
     print("Todos os dados foram apagados com sucesso!")
 
-# Menu principal
 def menu():
     carregar_dados()
     while True:
@@ -80,6 +72,5 @@ def menu():
         else:
             print("Opção inválida!")
 
-# Executa o menu
 if __name__ == "__main__":
     menu()
