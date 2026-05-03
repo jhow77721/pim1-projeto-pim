@@ -1,10 +1,10 @@
-# 📊 Sistema de Gestão Acadêmica (PIM 1)
+# Sistema de Gestão Acadêmica (PIM 1)
 
 Projeto desenvolvido em Python com o objetivo de calcular médias, frequência e desempenho de alunos.
 
 ---
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - Cálculo de média semestral
 - Verificação de aprovação ou reprovação
@@ -14,20 +14,20 @@ Projeto desenvolvido em Python com o objetivo de calcular médias, frequência e
 
 ---
 
-## 🛠 Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - Python
 - JSON
 
 ---
 
-## 📚 Sobre o projeto
+## Sobre o projeto
 
 Este projeto foi desenvolvido como parte do PIM 1 da faculdade (UNIP), com foco em aplicar conceitos de lógica de programação, estruturas condicionais e manipulação de dados.
 
 ---
 
-## ▶️ Como executar o projeto
+## Como executar o projeto
 
 1. Clone o repositório:
 ```bash
